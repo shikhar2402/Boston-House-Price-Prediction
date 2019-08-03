@@ -88,7 +88,7 @@ def learning_curve(depth, X_train, y_train, X_test, y_test):
     """Calculate the performance of the model after a set of training data."""
 
     # We will vary the training set size so that we have 50 different sizes
-    sizes = np.linspace(1, len(X_train), 50)
+    sizes = np.linspace(1, len(X_train), 50,dtype='int')
     train_err = np.zeros(len(sizes))
     test_err = np.zeros(len(sizes))
 
